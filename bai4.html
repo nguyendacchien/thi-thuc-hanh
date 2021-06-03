@@ -20,7 +20,7 @@
         render() {
             let ctx = document.getElementById('myCanvas').getContext('2d');
             ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.arc(this.x, this.y, this.radius, 2, Math.PI * 2);
             ctx.fillStyle = '#000000';
             ctx.fill();
             ctx.closePath();
@@ -28,6 +28,6 @@
         }
     }
 
-    let circle = new Circle(10, 10, 100);
+    let circle = new Circle(100, 100, 100);
     circle.render();
 </script>
