@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('number of elements: ');
+    let arr = [];
+    for (let i = 0; i < a; i++) {
+        arr.push(+prompt('enter element: '))
+    }
+
+    function tryRemoveFromArray(arr) {
+        let x = +prompt('number x: ');
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === x) {
+                arr.splice(i, 1);
+            }
+        }
+        return console.log(arr);
+    }
+    tryRemoveFromArray(arr);
+</script>
+</body>
+</html>
